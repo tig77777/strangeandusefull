@@ -22,7 +22,7 @@ Administrative Privileges: Administrative rights are required to change network 
 Contributions
 Feedback, suggestions, and contributions are welcome. Please feel free to fork the repository, make changes, and submit a pull request.
 
-3x-ui Docker Setup Script
+3x-ui Docker Setup Script (https://github.com/MHSanaei/3x-ui)
 
 based on https://openode.ru/topic/529-3x-ui-xray-shadowsocks-kak-zamena-wireguard-docker-edition/?do=findComment&comment=1783&_rid=574
 
