@@ -23,12 +23,15 @@ Contributions
 Feedback, suggestions, and contributions are welcome. Please feel free to fork the repository, make changes, and submit a pull request.
 
 3x-ui Docker Setup Script
+
 based on https://openode.ru/topic/529-3x-ui-xray-shadowsocks-kak-zamena-wireguard-docker-edition/?do=findComment&comment=1783&_rid=574
 
 Description
+
 This Bash script automates the setup of the 3x-ui environment using Docker on a Linux system. It simplifies the process of configuring and deploying the 3x-ui Docker container, handling everything from installing necessary dependencies to setting up SSL certificates and configuring Docker Compose.
 
 Features
+
 Automatic Dependency Installation: Installs Docker Compose and Certbot automatically.
 Docker Environment Setup: Creates necessary directories and fetches the docker-compose.yml file from the 3x-ui GitHub repository.
 Dynamic Docker Compose Configuration: Configures the Docker Compose file with the user's domain name and sets up volume mappings and environment variables.
