@@ -45,14 +45,11 @@ chmod +x acme-dns-auth.py
 # Start the certificate acquisition process with certbot
 certbot certonly --manual --manual-auth-hook ./acme-dns-auth.py --preferred-challenges dns --debug-challenges -d $domain_name
 
-# Get Python version
-python_version=$(python3 --version | awk '{print $2}')
-
-# Update shebang in the script
-if [[ -n "$python_version" ]]; then
-    sed -i "1s|.*|#!/usr/bin/env python$python_version|" /etc/letsencrypt/acme-dns-auth.py
+# Update shebang in the downloaded script
+if command -v python3 >/dev/null 2>&1; then
+    sed -i '1s|.*|#!/usr/bin/env python3|' acme-dns-auth.py
 else
-    echo "Python is not installed. Please install Python and try again."
+    echo "Python3 is not installed. Please install Python3 and try again."
 fi
 
 # Set file permissions in the keys folder
